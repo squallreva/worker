@@ -1,0 +1,5 @@
+{
+  "name": "hello-world-python-worker",
+  "main": "src/entry.py",
+  "compatibility_date": "2025-08-13"
+}
