@@ -5,4 +5,10 @@
 "compatibility_flags": [
     "python_workers"
   ],
+"routes": [
+    {
+      "pattern": "worker.weizhen.men",
+      "custom_domain": true
+    }
+  ],
 }
