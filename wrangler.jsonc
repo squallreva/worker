@@ -1,7 +1,7 @@
 {
   "name": "shy-rice-7a2c",
   "main": "src/entry.py",
-  "compatibility_date": "2025-08-13",
+  "compatibility_date": "2025-09-15",
 "compatibility_flags": [
     "python_workers"
   ],
