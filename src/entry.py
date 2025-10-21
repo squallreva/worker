@@ -3,4 +3,5 @@ from hello import hello
 
 class Default(WorkerEntrypoint):
     async def fetch(self, request):
-        return Response(hello("world"))
+        name = (await request.json()).name
+        return Response(hello(name))
