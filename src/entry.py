@@ -12,7 +12,7 @@ class Default(WorkerEntrypoint):
         name=body.get("name")
         if not name:
             return Response("Missing 'name' in JSON body", status=400)
-        name2=selft.env.API_HOST
+        name2=self.env.API_HOST
         if not name2:
             return Response("Missing 'name2' in variable", status=400)
         name =name + name2
