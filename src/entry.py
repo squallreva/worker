@@ -8,4 +8,5 @@ class Default(WorkerEntrypoint):
             return Response("Method not allowed", status=405)
         if request.headers.get("Content-Type") != "application/json":
             return Response("Content-Type must be application/json", status=400)
-        return Response(hello("test world"))
+        name=(request.json()).name
+        return Response(hello(name))
