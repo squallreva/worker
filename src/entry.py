@@ -8,9 +8,9 @@ class Default(WorkerEntrypoint):
             return Response("Method not allowed", status=405)
         if request.headers.get("Content-Type") != "application/json":
             return Response("Content-Type must be application/json", status=400)
-        body=await request.json()
-        name=body.get("name")
-        if not name:
-            return Response("Missing 'name' in JSON body", status=400)
+       # body=await request.json()
+       # name=body.get("name")
+       # if not name:
+       #     return Response("Missing 'name' in JSON body", status=400)
         name2=selft.env.API_HOST
-        return Response(hello(name))
+        return Response(hello(name2))
