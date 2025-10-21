@@ -12,6 +12,6 @@
     }
   ],
 "vars": {
-    "API_HOST": "example.com"
+    "API_HOST": "worker.weizhen.men"
   },
 }
